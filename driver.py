@@ -30,7 +30,7 @@ class Driver(object):
         messages = []
         for idx, post in enumerate(posts):
             message = Message()
-            post.click()
+            post.query_selector(".dropdown-toggle.highlightit").click()
             message.username = post.query_selector(".nav-header:has(img)").text_content().strip()
 
             timestamp = post.query_selector(".element-composant-auteur.cadre-auteur-message-date").text_content()
