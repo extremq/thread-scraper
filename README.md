@@ -1,0 +1,1 @@
+This is quick script for copying a forum thread to a Google Sheet.
